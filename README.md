@@ -17,19 +17,19 @@ gsnova -cmd -server -listen tcp://:48100 -listen quic://:48100 -listen tls://:48
 
 ```
 #quic协议
-gsnova -cmd -client -listen :48100 -remote quic://185.161.70.41:48100  -key 809240d3a021449f6e67aa73221d42df942a308a
+gsnova -cmd -client -listen :48100 -remote quic://2.2.2.2:48100  -key 809240d3a021449f6e67aa73221d42df942a308a
 
 #http协议
-gsnova -cmd -client -listen :48100 -remote http://185.161.70.41:48102  -key 809240d3a021449f6e67aa73221d42df942a308a
+gsnova -cmd -client -listen :48100 -remote http://2.2.2.2:48102  -key 809240d3a021449f6e67aa73221d42df942a308a
 
 #kcp协议
-gsnova -cmd -client -listen :48100 -remote kcp://185.161.70.41:48101  -key 809240d3a021449f6e67aa73221d42df942a308a
+gsnova -cmd -client -listen :48100 -remote kcp://2.2.2.2:48101  -key 809240d3a021449f6e67aa73221d42df942a308a
 
 #tcp协议
-gsnova -cmd -client -listen :48100 -remote tcp://185.161.70.41:48100  -key 809240d3a021449f6e67aa73221d42df942a308a
+gsnova -cmd -client -listen :48100 -remote tcp://2.2.2.2:48100  -key 809240d3a021449f6e67aa73221d42df942a308a
 
 #tls协议
-gsnova -cmd -client -listen :48100 -remote tls://185.161.70.41:48101  -key 809240d3a021449f6e67aa73221d42df942a308a
+gsnova -cmd -client -listen :48100 -remote tls://2.2.2.2:48101  -key 809240d3a021449f6e67aa73221d42df942a308a
 
 ```
 
