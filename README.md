@@ -10,26 +10,26 @@
 - 服务端启动命令
 
 ```
-gsnova -cmd -server -listen tcp://:48100 -listen quic://:48100 -listen tls://:48101 -listen kcp://:48101 -listen http://:48102 -listen http2://:48103  -key 809240d3a021449f6e67aa73221d42df942a308a -user "*"
+gsnova -cmd -server -listen tcp://:48100 -listen quic://:48100 -listen tls://:48101 -listen kcp://:48101 -listen http://:48102 -listen http2://:48103  -key PxeUnA5zOVYhydw6ydBWOcwX1SeFQloEW23XD6F8Apr1j -user "*"
 ```
 
 #### gsnova客户端启动命令
 
 ```
 #quic协议
-gsnova -cmd -client -listen :48100 -remote quic://185.161.70.41:48100  -key 809240d3a021449f6e67aa73221d42df942a308a
+gsnova -cmd -client -listen :1080 -remote quic://2.2.2.2:48100  -key PxeUnA5zOVYhydw6ydBWOcwX1SeFQloEW23XD6F8Apr1j
 
 #http协议
-gsnova -cmd -client -listen :48100 -remote http://185.161.70.41:48102  -key 809240d3a021449f6e67aa73221d42df942a308a
+gsnova -cmd -client -listen :1080 -remote http://2.2.2.2:48102  -key PxeUnA5zOVYhydw6ydBWOcwX1SeFQloEW23XD6F8Apr1j
 
 #kcp协议
-gsnova -cmd -client -listen :48100 -remote kcp://185.161.70.41:48101  -key 809240d3a021449f6e67aa73221d42df942a308a
+gsnova -cmd -client -listen :1080 -remote kcp://2.2.2.2:48101  -key PxeUnA5zOVYhydw6ydBWOcwX1SeFQloEW23XD6F8Apr1j
 
 #tcp协议
-gsnova -cmd -client -listen :48100 -remote tcp://185.161.70.41:48100  -key 809240d3a021449f6e67aa73221d42df942a308a
+gsnova -cmd -client -listen :1080 -remote tcp://2.2.2.2:48100  -key PxeUnA5zOVYhydw6ydBWOcwX1SeFQloEW23XD6F8Apr1j
 
 #tls协议
-gsnova -cmd -client -listen :48100 -remote tls://185.161.70.41:48101  -key 809240d3a021449f6e67aa73221d42df942a308a
+gsnova -cmd -client -listen :1080 -remote tls://2.2.2.2:48101  -key PxeUnA5zOVYhydw6ydBWOcwX1SeFQloEW23XD6F8Apr1j
 
 ```
 
