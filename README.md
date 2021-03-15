@@ -17,6 +17,7 @@ gsnova -cmd -server -listen tcp://:48100 -listen quic://:48100 -listen tls://:48
 
 ```
 #quic协议
+<<<<<<< HEAD
 gsnova -cmd -client -listen :1080 -remote quic://2.2.2.2:48100  -key PxeUnA5zOVYhydw6ydBWOcwX1SeFQloEW23XD6F8Apr1j
 
 #http协议
@@ -30,6 +31,21 @@ gsnova -cmd -client -listen :1080 -remote tcp://2.2.2.2:48100  -key PxeUnA5zOVYh
 
 #tls协议
 gsnova -cmd -client -listen :1080 -remote tls://2.2.2.2:48101  -key PxeUnA5zOVYhydw6ydBWOcwX1SeFQloEW23XD6F8Apr1j
+=======
+gsnova -cmd -client -listen :48100 -remote quic://2.2.2.2:48100  -key 809240d3a021449f6e67aa73221d42df942a308a
+
+#http协议
+gsnova -cmd -client -listen :48100 -remote http://2.2.2.2:48102  -key 809240d3a021449f6e67aa73221d42df942a308a
+
+#kcp协议
+gsnova -cmd -client -listen :48100 -remote kcp://2.2.2.2:48101  -key 809240d3a021449f6e67aa73221d42df942a308a
+
+#tcp协议
+gsnova -cmd -client -listen :48100 -remote tcp://2.2.2.2:48100  -key 809240d3a021449f6e67aa73221d42df942a308a
+
+#tls协议
+gsnova -cmd -client -listen :48100 -remote tls://2.2.2.2:48101  -key 809240d3a021449f6e67aa73221d42df942a308a
+>>>>>>> ddacc0c99858f429cfe8f40824f9f411bac457ae
 
 ```
 
